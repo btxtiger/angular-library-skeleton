@@ -1,0 +1,78 @@
+{
+   "root": true,
+   "ignorePatterns": ["projects/**/*"],
+   "plugins": ["jsdoc", "decorator-position"],
+   "parserOptions": {
+      "ecmaVersion": 2020,
+      "sourceType": "module"
+   },
+   "overrides": [
+      {
+         "files": ["*.ts"],
+         "parserOptions": {
+            "project": ["tsconfig.json"],
+            "createDefaultProgram": true
+         },
+         "extends": ["plugin:@angular-eslint/recommended", "plugin:@angular-eslint/template/process-inline-templates"],
+         "rules": {
+            "@angular-eslint/no-empty-lifecycle-method": "off",
+            "@angular-eslint/directive-selector": [
+               "error",
+               {
+                  "type": "attribute",
+                  "prefix": "app",
+                  "style": "camelCase"
+               }
+            ],
+            "@angular-eslint/component-selector": [
+               "error",
+               {
+                  "type": "element",
+                  "prefix": "app",
+                  "style": "kebab-case"
+               }
+            ],
+            "decorator-position/decorator-position": [
+               "error",
+               {
+                  "printWidth": 120,
+                  "properties": "above",
+                  "methods": "above"
+               }
+            ],
+            "@typescript-eslint/explicit-function-return-type": [
+               "error", {
+                  "allowExpressions": true
+               }
+            ],
+            "@typescript-eslint/explicit-member-accessibility": [
+               "error",
+               {
+                  "ignoredMethodNames": ["ngOnInit", "ngOnChanges", "ngOnDestroy", "ngAfterViewInit"],
+                  "overrides": {
+                     "constructors": "no-public"
+                  }
+               }
+            ],
+            "jsdoc/require-jsdoc": [
+               "error",
+               {
+                  "require": {
+                     "FunctionDeclaration": true
+                  },
+                  "checkConstructors": false,
+                  "contexts": [
+                     "MethodDefinition:not(MethodDefinition[key.name=\"ngOnInit\"]):not(MethodDefinition[key.name=\"ngOnDestroy\"]):not(MethodDefinition[key.name=\"ngOnChanges\"]):not(MethodDefinition[key.name=\"ngAfterViewInit\"])"
+                  ]
+               }
+            ],
+            "jsdoc/require-description": "error"
+         }
+      },
+      {
+         "files": ["*.html"],
+         "extends": ["plugin:@angular-eslint/template/recommended"],
+         "rules": {}
+      }
+   ]
+}

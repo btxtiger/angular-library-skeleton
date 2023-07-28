@@ -4,12 +4,15 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "start:lazy": "ng serve --live-reload=false",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    "test:ci": "ng test --no-watch --no-progress --browsers=FirefoxHeadless",
     "lint": "ng lint",
     "preinstall": "git config core.hooksPath hooks",
-    "format-prettier": "prettier --log-level warn --write \"./src/**/*.{ts,html,js,scss,json}\""
+    "format-prettier": "prettier --log-level warn --write \"./src/**/*.{ts,html,js,scss,json}\"",
+    "bundle-report": "webpack-bundle-analyzer dist/ims-frontend/stats.json"
   },
   "private": true,
   "dependencies": {
