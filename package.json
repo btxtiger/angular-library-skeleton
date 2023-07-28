@@ -8,6 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint",
+    "preinstall": "git config core.hooksPath hooks",
     "format-prettier": "prettier --log-level warn --write \"./src/**/*.{ts,html,js,scss,json}\""
   },
   "private": true,
@@ -48,6 +49,7 @@
     "@types/jasmine": "~4.3.0",
     "@typescript-eslint/eslint-plugin": "5.62.0",
     "@typescript-eslint/parser": "5.62.0",
+    "angular-best-practice": "github:btxtiger/angular-best-practice",
     "eslint": "^8.44.0",
     "eslint-plugin-decorator-position": "^5.0.2",
     "eslint-plugin-jsdoc": "^46.4.5",
