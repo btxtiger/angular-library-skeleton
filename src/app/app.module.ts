@@ -4,6 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {NgxLibModule} from "../../projects/ngx-lib/src/lib/ngx-lib.module";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatButtonModule} from "@angular/material/button";
 
 @NgModule({
   declarations: [
@@ -12,7 +14,9 @@ import {NgxLibModule} from "../../projects/ngx-lib/src/lib/ngx-lib.module";
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgxLibModule
+    NgxLibModule,
+    BrowserAnimationsModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
