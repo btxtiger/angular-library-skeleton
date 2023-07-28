@@ -1,6 +1,6 @@
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
-@use '@angular/material' as mat;
+@use "@angular/material" as mat;
 // Plus imports for other components in your app.
 
 // Include the common styles for Angular Material. We include this here so that you only
@@ -12,23 +12,29 @@
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
 $angular-library-skeleton-primary: mat.define-palette(mat.$indigo-palette);
-$angular-library-skeleton-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+$angular-library-skeleton-accent: mat.define-palette(
+  mat.$pink-palette,
+  A200,
+  A100,
+  A400
+);
 
 // The warn palette is optional (defaults to red).
 $angular-library-skeleton-warn: mat.define-palette(mat.$red-palette);
 
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
-$angular-library-skeleton-theme: mat.define-light-theme((
-  color: (
-    primary: $angular-library-skeleton-primary,
-    accent: $angular-library-skeleton-accent,
-    warn: $angular-library-skeleton-warn,
+$angular-library-skeleton-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $angular-library-skeleton-primary,
+      accent: $angular-library-skeleton-accent,
+      warn: $angular-library-skeleton-warn,
+    ),
   )
-));
+);
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
 @include mat.all-component-themes($angular-library-skeleton-theme);
-
