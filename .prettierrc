@@ -2,6 +2,14 @@
    "printWidth": 130,
    "tabWidth": 3,
    "singleQuote": true,
-   "insertPragma": false,
-   "plugins": ["prettier-plugin-organize-imports", "prettier-plugin-packagejson"]
+   "plugins": [
+      "prettier-plugin-organize-imports",
+      "prettier-plugin-packagejson",
+      "@ianvs/prettier-plugin-sort-imports",
+      "prettier-plugin-jsdoc",
+      "prettier-plugin-tailwindcss"
+   ],
+   "importOrder": ["^@angular/(.*)$","^@core/(.*)$", "^@server/(.*)$", "^@ui/(.*)$", "^[./]"],
+   "importOrderSeparation": true,
+   "importOrderSortSpecifiers": true
 }
