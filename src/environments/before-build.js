@@ -33,7 +33,7 @@ pkgJson.build = build;
 
 // Write package.json
 fs.unlinkSync('package.json');
-fs.writeFile('package.json', JSON.stringify(pkgJson, null, 3) + '\n', function(err) {
+fs.writeFile('package.json', JSON.stringify(pkgJson, null, 3) + '\n', function (err) {
    if (err) return console.log(err);
    console.log('File: package.json updated!');
 });

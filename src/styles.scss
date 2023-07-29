@@ -1,2 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
-@import "src/app/theme/index";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'src/app/theme/index';
