@@ -29,7 +29,7 @@
          "dom"
       ],
 
-      // Enhancements
+      // Custom compiler options
       "allowSyntheticDefaultImports": true,
       "noImplicitAny": true,
       "esModuleInterop": true,
