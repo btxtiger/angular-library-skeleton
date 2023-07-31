@@ -6,7 +6,8 @@
    // Remove the tailwind entry if you don't use tailwind!
    // Otherwise ~400 lines of useless CSS will be bundled.
 
-   .ngx-lib-container {
+   &__container {
       // @apply your tailwind styles
+      @apply bg-red-50;
    }
 }

@@ -22,7 +22,7 @@
       "build": "ng build",
       "build:demo": "ng build",
       "build:lib": "npm run build:lib:tw && ng build ngx-lib",
-      "build:lib:tw": "tailwind -c projects/ngx-lib/tailwind.config.js -i projects/ngx-lib/src/theme/tailwind.scss -o projects/ngx-lib/src/theme/tailwind-prod.scss",
+      "build:lib:tw": "tailwind --minify -c projects/ngx-lib/tailwind.config.js -i projects/ngx-lib/src/theme/tailwind.scss -o projects/ngx-lib/src/theme/tailwind-prod.scss",
       "bundle-report": "webpack-bundle-analyzer dist/ims-frontend/stats.json",
       "preinstall": "git config core.hooksPath hooks",
       "lint": "ng lint",
