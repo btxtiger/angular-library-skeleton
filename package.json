@@ -26,6 +26,7 @@
       "bundle-report": "webpack-bundle-analyzer dist/ims-frontend/stats.json",
       "preinstall": "git config core.hooksPath hooks",
       "lint": "ng lint",
+      "publish": "npm run build:demo && npm run build:lib && cd dist/ngx-lib && npm publish",
       "ng": "ng",
       "prettier-format": "prettier --log-level warn --write \"./{src,projects}/**/*.{ts,html,js,scss,json}\"",
       "start": "ng serve",
