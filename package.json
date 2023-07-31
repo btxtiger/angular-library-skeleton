@@ -21,7 +21,8 @@
    "scripts": {
       "build": "ng build",
       "build:demo": "ng build",
-      "build:lib": "ng build ngx-lib",
+      "build:lib": "npm run build:lib:tw && ng build ngx-lib",
+      "build:lib:tw": "tailwind -c projects/ngx-lib/tailwind.config.js -i projects/ngx-lib/src/theme/tailwind-setup.scss -o projects/ngx-lib/src/theme/tailwind.scss",
       "bundle-report": "webpack-bundle-analyzer dist/ims-frontend/stats.json",
       "preinstall": "git config core.hooksPath hooks",
       "lint": "ng lint",
@@ -53,9 +54,9 @@
       "moment-mini": "github:ksloan/moment-mini",
       "ngx-md-icon": "^1.1.24",
       "ngx-modern-alerts": "^0.2.13",
-      "normalize.css": "^8.0.1",
       "prettier-plugin-jsdoc": "^1.0.1",
       "rxjs": "~7.8.0",
+      "tailwindscss": "^0.3.0",
       "tslib": "^2.3.0",
       "zone.js": "~0.13.0"
    },

@@ -1,15 +1,8 @@
 /**
- * Remove the tailwind entries if you don't use tailwind!
- * Otherwise ~400 lines of useless CSS will be bundled.
- */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-
-/**
  * Scoped component styles
  */
 .ngx-lib {
-   //
+   // Remove the tailwind entry if you don't use tailwind!
+   // Otherwise ~400 lines of useless CSS will be bundled.
+    @import "../theme/tailwind";
 }

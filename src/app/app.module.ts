@@ -3,7 +3,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgxLibComponent } from '../../projects/ngx-lib/src/lib/ngx-lib.component';
-// import { NgxLibModule } from 'ngx-lib';
+// import { NgxLibComponent } from 'ngx-lib';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
