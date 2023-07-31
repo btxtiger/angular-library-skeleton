@@ -6,4 +6,7 @@ module.exports = {
       extend: {},
    },
    plugins: [],
+   experimental: {
+      optimizeUniversalDefaults: true,
+   },
 };
