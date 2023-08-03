@@ -39,7 +39,7 @@
                },
                "configurations": {
                   "production": {
-                     "baseHref": "/ngx-lib/",
+                     "baseHref": "/angular-library-skeleton/",
                      "budgets": [
                         {
                            "type": "initial",
