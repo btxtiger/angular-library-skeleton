@@ -2,6 +2,7 @@
 
 module.exports = {
    content: ['./src/**/*.{html,ts}', './projects/ngx-lib/src/**/*.{html,ts}'],
+   darkMode: 'class',
    theme: {
       extend: {},
    },

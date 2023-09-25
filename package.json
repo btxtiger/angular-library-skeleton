@@ -55,6 +55,7 @@
       "moment-mini": "github:ksloan/moment-mini",
       "ngx-md-icon": "^1.1.24",
       "ngx-modern-alerts": "^0.2.13",
+      "normalize.css": "^8.0.1",
       "prettier-plugin-jsdoc": "^1.0.1",
       "rxjs": "~7.8.0",
       "tailwindscss": "^0.3.0",

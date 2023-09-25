@@ -1,10 +1,23 @@
-<div class="container max-w-4xl mx-auto">
+<mat-toolbar class="drop-shadow">
+   <mat-toolbar-row>
+      <h2>angular-library-skeleton</h2>
+      <span class="flex-grow"></span>
+      <button mat-icon-button color="primary" (click)="toggleDarkMode()">
+         <mat-icon>dark_mode</mat-icon>
+      </button>
+   </mat-toolbar-row>
+</mat-toolbar>
 
-   <h2 class="text-2xl my-4">
-      Angular Library Skeleton
-   </h2>
+<div class="container mx-auto max-w-4xl">
+   <h2 class="my-4 text-2xl">Angular Library Skeleton</h2>
 
-   <ngx-lib />
+   <div class="mb-4 bg-emerald-200 p-4 dark:bg-emerald-900">
+      <h4 class="font-bold">ngx-lib</h4>
+      <ngx-lib />
+   </div>
 
-   <router-outlet></router-outlet>
+   <div class="mb-4 bg-amber-200 p-4 dark:bg-amber-800">
+      <h4 class="font-bold">Router Outlet</h4>
+      <router-outlet></router-outlet>
+   </div>
 </div>

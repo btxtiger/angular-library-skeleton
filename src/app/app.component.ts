@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
    styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-   title = 'angular-library-skeleton';
+   constructor() {
+      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+         this.toggleDarkMode();
+      }
+   }
+
+   /** Toggle Dark Mode */
+   public toggleDarkMode(): void {
+      document.body.classList.toggle('dark');
+   }
 }

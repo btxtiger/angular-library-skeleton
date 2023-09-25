@@ -1,0 +1,30 @@
+.table {
+   @apply w-full text-left text-sm text-gray-500 dark:text-gray-400;
+
+   thead {
+      @apply text-xs uppercase;
+      background-color: var(--mat-toolbar-container-background-color);
+      color: var(--mat-option-selected-state-label-text-color);
+
+      th {
+         @apply px-6 py-3;
+      }
+   }
+
+   tbody {
+      tr {
+         @apply border-b bg-gray-300/10 dark:border-gray-700 dark:bg-gray-800/30;
+
+         &:last-child {
+            @apply border-b-0;
+         }
+
+         th {
+            @apply whitespace-nowrap px-6 py-4 font-medium text-gray-900 dark:text-white;
+         }
+         td {
+            @apply px-6 py-4;
+         }
+      }
+   }
+}

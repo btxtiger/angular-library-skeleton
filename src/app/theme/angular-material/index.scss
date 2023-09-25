@@ -1,1 +1,6 @@
 @import 'material-theme';
+
+// Fixes
+.mat-mdc-button-base {
+   line-height: normal;
+}
