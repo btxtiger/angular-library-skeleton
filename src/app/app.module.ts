@@ -8,8 +8,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 // Import the library
-// import { NgxLibComponent } from '../../projects/ngx-lib/src/lib/ngx-lib.component';
-import { NgxLibComponent } from 'ngx-lib';
+import { NgxLibComponent } from '../../projects/ngx-lib/src/lib/ngx-lib.component';
+// import { NgxLibComponent } from 'ngx-lib';
 
 @NgModule({
    declarations: [AppComponent],
