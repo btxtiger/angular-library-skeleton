@@ -1,6 +1,8 @@
 @import 'material-theme';
 
-// Fixes
-.mat-mdc-button-base {
-   line-height: normal;
+// MDC Fixes
+button.mat-mdc-icon-button {
+   display: inline-flex !important;
+   align-items: center;
+   justify-content: center;
 }
